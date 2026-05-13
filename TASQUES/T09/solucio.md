@@ -72,4 +72,36 @@ He entrat a la màquina ZORIN desde el usuari anteriorment creat al server manag
 
 ---
 
-### PAS 8: 
+### PAS 8: Connexió per la ruta
+
+Ara hem d’anar a archivos,  otras ubicaciones i ens intentem conectar per la ruta, a mi no em deixa conectarme normal i he tingut que conectarme a la carpeta public que vam fer tasques anteriors i he tingut que conectarme en format IP perquè sinó no hem deixa. 
+
+
+<img width="619" height="239" alt="14" src="https://github.com/user-attachments/assets/28129b36-66bf-4c45-a027-5865435693b2" />
+
+<img width="606" height="76" alt="15" src="https://github.com/user-attachments/assets/90243668-f1e4-4c3a-8e66-629123ee6f1b" />
+
+<img width="625" height="177" alt="16" src="https://github.com/user-attachments/assets/96600324-acbb-4cba-99c2-7f65cf2b9c22" />
+
+---
+
+### PAS 9: Configuracions finals
+
+Un cop m’ha conectat he creat un archiu desde el servidor a la carpeta public i he anat al zorin a comprovar i si que funciona. 
+
+<img width="619" height="447" alt="17" src="https://github.com/user-attachments/assets/50d97ddc-ac32-4c41-9485-955c21065272" />
+
+<img width="681" height="341" alt="18" src="https://github.com/user-attachments/assets/2f423f14-4e36-4de7-8818-9d1c8f6bf82c" />
+
+
+
+<img width="686" height="477" alt="19" src="https://github.com/user-attachments/assets/4dc19f60-7726-4b52-9be0-bf0f8f323eba" />
+
+---
+---
+
+*Fi*
+
+---
+
+
