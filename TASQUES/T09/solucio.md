@@ -61,4 +61,7 @@ Unió (Join): Si el detecta, l'he unit amb:
 *sudo realm join nom_del_teu_domini*
 
 
+### PAS 7: Configuracions finals de sessió
+
+
 
