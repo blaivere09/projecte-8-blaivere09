@@ -43,7 +43,7 @@ I per comprovar: *hostname -f*
 
 He sincronitzat que les 2 màquines estiguin en la maiteixa hora
 
-<img width="1910" height="798" alt="8" src="https://github.com/user-attachments/assets/4e94bd72-5ae8-4b81-b09a-8f111ce32d60" />
+<img width="1920" height="943" alt="10" src="https://github.com/user-attachments/assets/46529c95-041e-4b40-8457-1b69518f3b65" />
 
 ---
 
@@ -60,8 +60,16 @@ Unió (Join): Si el detecta, l'he unit amb:
 
 *sudo realm join nom_del_teu_domini*
 
+<img width="671" height="117" alt="11" src="https://github.com/user-attachments/assets/60955b0a-1577-4201-a8dc-1ee0907ed0c7" />
 
-### PAS 7: Configuracions finals de sessió
+---
 
+### PAS 7: Usuari linux
 
+He entrat a la màquina ZORIN desde el usuari anteriorment creat al server manager
 
+<img width="811" height="605" alt="12" src="https://github.com/user-attachments/assets/cb8f68a2-ee79-4ba8-b984-0b04d664ef86" />
+
+---
+
+### PAS 8: 
