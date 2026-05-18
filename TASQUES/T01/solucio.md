@@ -470,4 +470,4 @@ A més, la infraestructura plantejada garanteix estabilitat, seguretat, connecti
 
 ### Moltes gràcies per la vostra atenció!
 
-[Tornar Enrere](./.)
+
