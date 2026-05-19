@@ -160,3 +160,62 @@ captura2.pcapng
 
 ```
 
+<img width="615" height="239" alt="12" src="https://github.com/user-attachments/assets/73044cf5-d4ca-4ae1-8de6-23cd72e719d1" />
+
+---
+
+
+# OBRIR PCAP
+
+Primer, he obert **Wireshark**.
+
+Després, he anat al menú:
+
+- **File**
+- **Open**
+
+Finalment, he seleccionat el fitxer de captura `.pcapng` per obrir-lo.
+
+<img width="826" height="712" alt="13" src="https://github.com/user-attachments/assets/bbcfc4e6-8159-4278-84a8-59b5f56570ff" />
+
+---
+
+# EXERCICI 1 — ARP
+
+Primer, he aplicat el filtre següent a Wireshark:
+
+```text
+arp && ip.addr == 192.168.1.1
+
+```
+
+Si no ha funcionat, he utilitzat el filtre més general:
+
+arp
+
+A continuació, he buscat manualment el missatge:
+
+```
+
+192.168.1.1 is at ...
+
+````
+
+Finalment, he identificat l’adreça MAC associada a la IP 192.168.1.1.
+
+```
+````
+<img width="875" height="436" alt="14" src="https://github.com/user-attachments/assets/c2fee71a-c0a4-4643-b042-5e9f9d24cc6d" />
+
+---
+
+#  ARP (192.168.1.1)
+
+Primer, he aplicat el filtre següent a Wireshark:
+
+```text
+arp && ip.addr == 192.168.1.1
+
+```
+
+
