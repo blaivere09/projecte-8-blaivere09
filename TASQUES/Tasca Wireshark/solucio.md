@@ -209,13 +209,44 @@ Finalment, he identificat l’adreça MAC associada a la IP 192.168.1.1.
 
 ---
 
-#  ARP (192.168.1.1)
+# 4.2 FTP (contrasenya i fitxer)
 
 Primer, he aplicat el filtre següent a Wireshark:
 
 ```text
-arp && ip.addr == 192.168.1.1
+ftp
 
 ```
 
+<img width="820" height="383" alt="15" src="https://github.com/user-attachments/assets/5d127eba-2fc4-4d58-bd14-fda9f16319fa" />
+
+---
+
+# Telnet (nau espacial)
+
+Primer, he aplicat el filtre següent a Wireshark:
+
+```text
+telnet
+
+```
+
+<img width="956" height="449" alt="16" src="https://github.com/user-attachments/assets/70384a44-eed0-4e20-90fa-fae2bae06dae" />
+
+<img width="846" height="819" alt="17" src="https://github.com/user-attachments/assets/d02308e4-4e0a-4c97-801f-1df1f9785afa" />
+
+<img width="798" height="744" alt="18" src="https://github.com/user-attachments/assets/47922679-3fe4-45e4-93b0-07097c49b784" />
+
+
+---
+
+
+# SSH (paquet de 326 bytes)
+
+Primer, he aplicat el filtre següent a Wireshark:
+
+```text
+ssh
+
+```
 
