@@ -217,5 +217,6 @@ Per finalitzar la pràctica, s'accedeix a la pantalla d'**Estado**. En aquest ap
 ---
 
 ***Fi.***
+
 ---
 
