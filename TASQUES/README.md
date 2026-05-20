@@ -1,18 +1,30 @@
-Descripció de la Tasca: Implantació de Seguretat Perimetral amb IPFire
-Aquesta tasca consisteix en el desplegament, configuració i validació d'un sistema tallafocs (Firewall) i un servidor Proxy Web avançat utilitzant la distribució de codi obert IPFire. El projecte es planteja com una simulació real per implementar un entorn de xarxa segur i monitoritzat per a l'empresa FoodLogístic S.A., adaptat amb els paràmetres de direccionament específics assignats a l'alumne (Subxarxa GREEN: 192.169.25.0/24).
+# 🛡️ Resum de la Tasca: Seguretat i Filtratge de Xarxa amb IPFire
 
-Els objectius i blocs tècnics clau que es treballen en aquesta pràctica són els següents:
+## 🎯 Objectiu de la Pràctiques
+L'objectiu principal d'aquesta tasca és dissenyar i implementar la infraestructura de seguretat perimetral per a l'empresa **FoodLogístic S.A.** utilitzant la distribució Linux **IPFire**. Mitjançant el desplegament d'un tallafocs i la configuració d'un servidor Proxy avançat, s'aconsegueix un control total, auditable i granular de l'activitat de la xarxa local.
 
-Preparació de l'Entorn Virtual: Interconnexió d'una màquina client interna (Zorin OS) amb les interfícies de xarxa d'IPFire (GREEN per a la xarxa local LAN i RED per a la connexió cap a Internet extern).
+---
 
-Servidor Proxy Avançat (Web Proxy): Activació del servei Squid a la xarxa de l'empresa per centralitzar el trànsit, integrant la configuració de filtres de tipus MIME per bloquejar la descàrrega d'extensions de fitxers de risc o no desitjats.
+## 💻 Descripció de les Fases Realitzades
 
-Polítiques de Filtratge d'URL: * Categories Globals: Bloqueig d'accés a serveis complets a nivell d'empresa, com ara banca en línia (bank) i plataformes de reproducció multimèdia (radio).
+### 1. Preparació de l'Entorn Virtual (Fase 0)
+* Es desplega el tallafocs IPFire connectat en mode pont/NAT cap a Internet (**Interfície RED**) i connectat en xarxa interna (**Interfície GREEN**) amb la IP `192.169.25.254`.
+* Es configura un client web amb el sistema operatiu **Zorin OS** utilitzant un direccionament IP estàtic dins del mateix rang (`192.169.25.1`) per tal de gestionar el tallafocs mitjançant la interfície web de gestió (WebGUI) al port `444`.
 
-Llistes Negres Personalitzades: Restricció quirúrgica de dominis específics de premsa o entorns educatius, així com filtratge avançat per URLs d'un sol perfil concret d'una xarxa social sense afectar el domini base.
+### 2. Configuració del Servidor Proxy i Filtre d'URL (Fase 1 i 2)
+* S'activa el **Web Proxy** a la zona GREEN per centralitzar tot el trànsit de navegació.
+* S'implementa seguretat addicional activant el **Filtre de tipus MIME** per bloquejar la descàrrega de fitxers executables o binaris potencialment perillosos.
+* Es carregaven les categories globals de bloqueig i es restringeix l'accés a nivell d'empresa a serveis de **banca (bank)** i reproducció multimèdia o **ràdio en línia (radio)**.
 
-Llistes Blanques: Implementació d'un entorn restrictiu tancat per a temàtiques concretes (per exemple, entreteniment/anime), on només es permet l'accés a les pàgines explícitament autoritzades per l'administrador.
+### 3. Personalització de Restriccions Quirúrgiques (Fase 3)
+* **Llista Negra:** Es bloquegen dominis complets com `elnacional.cat` i `tecnocampus.cat`. També es demostra el filtratge granular prohibint una URL o perfil específic d'una xarxa social sense afectar el domini base de la plataforma.
+* **Llista Blanca:** S'aplica una política restrictiva per a entorns d'entreteniment (Anime), on només es permet l'accés a una única web autoritzada, bloquejant automàticament tota la resta de pàgines de la mateixa temàtica.
 
-Polítiques del Cortafuegos (Restricció Horària): Creació de regles de xarxa a nivell de firewall per tallar completament el trànsit de dades cap a l'exterior fora de les hores permeses (configuració de restricció horària de 00:00 a 24:00).
+### 4. Control Horari al Cortafuegos (Fase 4 i 5)
+* Es dissenya una regla de tall total de xarxa a l'IPFire utilitzant la **Restricció de temps (Time Restriction)** de `00:00` a `24:00` hores.
+* Es valida des del client que el tall de comunicació és efectiu a nivell de xarxa, provocant errors de connexió segura (SSL/TLS) en horaris no permesos.
 
-Auditoria, Traçabilitat i Estat: Validació pràctica des del client dels errors llançats pel sistema (com els missatges corporatius d'accés denegat o els talls de connexió SSL/TLS) i monitorització dels gràfics de tràfic (bits/s) i rendiment general de l'IPFire en temps real.
+---
+
+## 📈 Validació Final del Sistema
+Es realitza una auditoria des de l'apartat **"Estado"** de l'IPFire per monitoritzar el rendiment del tallafocs, l'ús de la memòria cau del proxy i el tràfic de dades en temps real (bits/s), garantint que la xarxa corporativa de FoodLogístic S.A. és completament robusta, eficient i segura.
