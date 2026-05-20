@@ -26,7 +26,8 @@ Es posa en marxa la màquina del tallafocs. Durant la càrrega del sistema basat
 
 Es procedeix a l'arrencada de l'entorn de treball de l'usuari/client sota el sistema operatiu Zorin OS. Aquest terminal s'utilitzarà per fer les proves de navegació i gestionar de forma remota l'IPFire.
 
-![captura](/TASQUES/tasca_ipfire/ip_fire/2.jpg)
+<img width="754" height="501" alt="2" src="https://github.com/user-attachments/assets/403f0086-4ec6-4cf0-ad9b-9a72c4e3256d" />
+
 
 ### Pas 0.3: Configuració de Paràmetres IP Estàtics al Client
 
