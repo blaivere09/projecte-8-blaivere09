@@ -1,4 +1,4 @@
-Aquí tens la teva guia de pràctiques completament estructurada amb les rutes de les captures inserides exactament a sota de cada pas corresponent, utilitzant la ruta base demana (`TASQUES/tasca_ipfire/ip_fire/`) i respectant l'extensió real de cadascuna (`.png` o `.jpg`):
+
 
 ---
 
