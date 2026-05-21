@@ -46,3 +46,6 @@ Li donem a agregar i ja tindriem els canvis aplicats en la configuració.
 
 ---
 
+<img width="983" height="641" alt="image" src="https://github.com/user-attachments/assets/29b64d95-ff5a-49ef-8cc4-e9c25139882f" />
+
+Comprovem amb el client extern de **Windows**
