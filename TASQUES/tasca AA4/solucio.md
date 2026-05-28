@@ -48,4 +48,52 @@ Li donem a agregar i ja tindriem els canvis aplicats en la configuració.
 
 <img width="983" height="641" alt="image" src="https://github.com/user-attachments/assets/29b64d95-ff5a-49ef-8cc4-e9c25139882f" />
 
-Comprovem amb el client extern de **Windows**
+
+
+# Comprovació amb el client extern de **Windows**
+
+Des de un client de Windows he accedit a la IP del adaptador de xarxa del ipfire 
+
+---
+
+# VPN amb OpenVPN (Roadwarrior)
+
+En aquest apartat configurem un accés remot segur mitjançant un túnel xifrat, evitant així exposar ports directament a Internet.
+
+###  Generació de Certificats a l'IPFire
+1. Accedeix al menú **Servicios** ➔ **OpenVPN**.
+2. Com que és la primera configuració, clica el botó **Generate Root/Host Certificates**.
+3. **Omple les dades del formulari** (país, organització, etc.) i confirma per **generar-los** (aquest procés pot trigar una mica).
+
+###  Creació de l'Usuari Roadwarrior
+1. Ves a la pestanya **Control y estado de conexión** i clica a **Agregar**.
+2. Tria el tipus de connexió: **Red privada virtual VPN Host-to-Net (Roadwarrior)** i torna a clicar **Agregar**.
+3. Dins de la configuració de la connexió, assegura't de marcar l'opció **Activat** (✓).
+
+<img width="873" height="301" alt="image" src="https://github.com/user-attachments/assets/758f308b-c927-47c9-a446-152f2244b1e0" />
+
+<img width="966" height="350" alt="image" src="https://github.com/user-attachments/assets/c7063b18-bc3f-4493-a0fe-f99317c3f52d" />
+
+---
+
+# Extracció d'arxius del client
+
+Una vegada finalitzada la creació de l'usuari, l'IPFire obtindrà dos fitxers:
+* **Serveis25.ovpn** (paràmetres de connexió OpenVPN)
+* **Serveis25.p12** (certificat i clau privada)
+
+Descarrega'ls i transféreix-los a la màquina virtual client externa (per exemple, un entorn Windows). Per fer-ho, pots fer servir plataformes d'emmagatzematge com Google Drive o serveis d'enviament de fitxers temporals per enllaç com FileMail.
+
+<img width="980" height="195" alt="image" src="https://github.com/user-attachments/assets/911d03e1-3aa0-40da-acab-aa87b3b2af61" />
+
+<img width="963" height="577" alt="image" src="https://github.com/user-attachments/assets/f1941f46-a845-4597-96e9-ce7b574b1fa2" />
+
+---
+
+
+# Habilitar el servei
+
+Hem de marcar la opcio de *"Activado"*
+
+<img width="926" height="228" alt="image" src="https://github.com/user-attachments/assets/57872701-301b-4d26-a31b-3a1dcbeda515" />
+
