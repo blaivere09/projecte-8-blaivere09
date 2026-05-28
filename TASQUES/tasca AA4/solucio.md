@@ -97,3 +97,52 @@ Hem de marcar la opcio de *"Activado"*
 
 <img width="926" height="228" alt="image" src="https://github.com/user-attachments/assets/57872701-301b-4d26-a31b-3a1dcbeda515" />
 
+---
+
+# Preparar el client Windows
+
+###  Instal·lació d'OpenVPN GUI
+Descarrega l'aplicació **OpenVPN GUI** des de la seva pàgina web oficial i procedeix a realitzar la instal·lació al teu sistema.
+
+###  Edició del fitxer .ovpn (pas crític)
+Obre el fitxer de configuració .ovpn utilitzant l'editor de text (com el Bloc de notes). Localitza la línia que s'inicia amb el paràmetre `remote` i substitueix l'adreça existent per la IP corresponent a la interfície RED de l'IPFire. Finalment, desa les modificacions aplicades.
+
+<img width="869" height="622" alt="image" src="https://github.com/user-attachments/assets/81b59c37-a4f7-428a-9882-1c528f552f32" />
+
+###  Configuració de la carpeta de perfils
+
+Fes **clic secundari** a la icona del programa **OpenVPN** i tria la funció **Import files** per triar el teu fitxer `.ovpn`. El sistema obrirà una carpeta específica per a aquest perfil a l'adreça `C:\Users\usuari\OpenVPN\config\`. Perquè tot funcioni correctament, assegura't de moure també el certificat `.p12` a aquesta mateixa ubicació.
+
+
+<img width="974" height="406" alt="image" src="https://github.com/user-attachments/assets/a94c06b3-5c4f-4d99-a33f-312215e5cca6" />
+
+###  Modificació del fitxer hosts de Windows (Opcional)
+
+Amb l'objectiu de garantir la resolució de noms correcta per al domini `ipfire.foodlogistic.test` definit a la configuració del vostre `.ovpn`, cal modificar el fitxer del sistema situat a la ruta `C:\Windows\System32\drivers\etc\hosts`. 
+
+Per fer-ho, obriu l'editor de text amb permisos d'**administrador** i introduïu la línia següent al final del document:
+`192.169.25.254  ipfire.foodlogistic.test`
+
+---
+
+# Conectar VPN
+
+Farem click i introduirem la contrassenya anteriorment posada.
+
+<img width="487" height="269" alt="image" src="https://github.com/user-attachments/assets/d13d9785-e5e9-412c-a68b-a61111eb3636" />
+
+Rebrem un missatge amb una Ip.
+
+Ara comprovarem que tot funciona be.
+
+# Comprovació
+
+<img width="631" height="82" alt="image" src="https://github.com/user-attachments/assets/36600bc7-6509-40e4-8746-d06ba5841496" />
+
+<img width="511" height="242" alt="image" src="https://github.com/user-attachments/assets/32cbc871-27cf-4652-8510-0be192755ea9" />
+
+---
+
+***fi***
+
+---
