@@ -16,3 +16,7 @@
 - [ ] Configuració i prova de l'accés via DNAT.
 - [ ] Configuració i prova de l'accés via VPN.
 - [ ] Quadre comparatiu de les dues tecnologies.
+
+---
+
+---
